@@ -1,0 +1,33 @@
+{
+  "name": "@pipeworx/mcp-hpms-aadt",
+  "version": "0.1.0",
+  "description": "FHWA, Highway Performance Monitoring System (HPMS): annual average daily traffic (AADT) per roadway section, by state and data year. Keyless US federal data, answered live from the publisher on every request.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "mcp-hpms-aadt": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "hpms-aadt"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-hpms-aadt.git"
+  },
+  "mcpName": "io.github.pipeworx-io/hpms-aadt",
+  "pipeworx": {
+    "mode": "gateway",
+    "slug": "hpms-aadt",
+    "gatewaySlug": "hpms-aadt",
+    "sourceHash": "v1-236fdcab9d4fbc4e5324a9b1f327c0a0db5fd5cf905bbd356fe402afaa4f4225",
+    "sourceCommit": "5cb09714e895571153f3d9663c36ff0f140cadd6"
+  }
+}
